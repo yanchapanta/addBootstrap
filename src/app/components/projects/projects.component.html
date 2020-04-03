@@ -1,0 +1,23 @@
+<div class="container pb-5" id="content">
+	<div class="row">
+		<div class="col">
+			<h2>Proyectos</h2>
+
+			<ul>
+				<li *ngFor="let project of projects" class="project">
+					<a [routerLink]="['/proyecto', project._id]">
+						<div class="image">
+							<img src="{{url+'get-image/'+project.image}}" *ngIf="project.image">
+						</div>			
+						<h3>{{project.name}}</h3>
+						<p>{{project.category}}</p> 
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+	</div>	
+</div>
+<div class="container">
+	
+</div>

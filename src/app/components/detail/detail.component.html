@@ -1,0 +1,63 @@
+<div class="container pb-5" id="content" *ngIf="project">
+	<div class="container " >
+		<!--
+			justify-content-start, en modo stylo de columna
+			justify-content-center, en modo stylo de columna
+			justify-content-end, en modo stylo de columna
+		-->
+		<div class="row justify-content-center ms-justify-content-start">
+			<div class="col-sm xl-4">
+				<div  *ngIf="project.image">
+					<img src="{{url+'get-image/'+ project.image}}" *ngIf="project.image" alt="notimage" class="img-thumbnail mb-5">			
+				</div>
+			</div>
+			<div class="col-sm xl-5 mb-5 xl-mb-5-none">
+				<div class="col text-center">
+					<h1>{{project.name}}</h1> 
+					<h3>{{project.description}}</h3> 
+					<p>{{project.category}}</p>
+					<p>{{project.langs}}</p>
+					
+				</div>
+				<div class="row justify-content-around" *ngIf="confirm == false">
+					<div class="col-5 " >
+						<a [routerLink]="['/editar-proyecto', project._id]" class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">Editar</a>	
+					</div>
+					<div class="col-5">
+						<a (click)="setConfirm(true)" class="btn btn-danger btn-lg active btn-block" role="button" aria-pressed="true">Borrar</a>
+					</div>		
+				</div>
+				<div *ngIf="confirm == true">
+					<span class="confirm pr-3 pl-3">¿Estas seguro de eliminar este proyecto?</span>
+					<div class="row justify-content-around " >	
+
+						<div class="col-4 " >
+
+													<a (click)="setConfirm(false)" class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">Cancelar</a>	
+
+						</div>
+						<div class="col-6">
+
+							<a (click)="deleteProject(project._id)" class="btn btn-danger btn-lg active btn-block" role="button" aria-pressed="true">Eliminar definitivamete</a>
+
+						</div>		
+					</div>	
+				</div>
+				
+			</div>
+			
+		</div>		 
+	</div>
+</div>
+ 
+					
+ <!-- <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button> -->

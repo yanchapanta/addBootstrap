@@ -1,0 +1,187 @@
+@font-face{/*import fonts custom*/
+	font-family: "finger";
+	src: url("fonts/finger.ttf");
+}
+@font-face{
+	font-family: "titilium";
+	src: url("fonts/titilium.ttf");
+}
+@font-face{
+	font-family: "yanone";
+	src: url("fonts/yanone.ttf");
+}
+
+*{
+	margin: 0px;
+	padding: 0px; 
+}
+
+/*Logotipo*/
+
+.navbar img{
+	transition: transform 500ms;
+}
+.navbar img:hover{		
+	transform: scale(1.50,1.50);
+}
+.active{	
+	background: rgba(87, 132, 36, 0.52);
+} 
+body{
+	font-family:"yanone", Arial, Helvetica;
+	font-size: 20px;
+	/*background: url("../img/pattern.png");
+	background-attachment:fixed;*/
+	z-index: none;
+}
+.clearfix{
+	float: none;
+	clear:both;
+}
+/*navigation bar / header*/
+.header{	
+	text-transform:uppercase;
+}
+/*Container primary*/
+#content{
+	box-shadow: 0px 0px 40px black;
+	border-left: 1px solid #b7b7b7;
+	border-right: 1px solid #b7b7b7;
+	background: rgba(225, 225, 225, 0.7);
+	padding-top: 50px;
+}
+footer{
+	margin: 0px auto;
+	padding-top: 15px;
+	color: rgba(0, 0, 0, 0.5);
+}
+#title{
+	width: 70%;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 70px;
+}
+#title h1{
+	font-family: "finger";
+	font-size: 60px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+#title h2{
+	font-size: 25px;
+	color: gray;
+	margin-top: 5px;	
+}
+.about{
+	margin: 0px auto;
+	margin-bottom: 20px;
+	font-size: 23px;	
+}
+.about h2{
+	border-bottom: 1px solid #cccc;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.about p{
+	padding-right: 20px;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	text-align: justify;
+}
+
+
+form{
+	margin-left: 20px;
+}
+.long{
+	padding-left: 10px;
+}
+
+.button-edit,
+.button-delete{
+	display: block;
+	font-size: 17px;
+	padding: 10px;
+	margin-top: 15px;
+	color: white;
+	background: rgba(53, 103, 164, 1);
+	border: 1px rgba(13, 67, 133, 1);
+	cursor:pointer;
+}
+.button-edit,
+.button-delete{
+	width: 30%;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+.button-edit{
+	background: orange;
+	border: 1px solid rgba(183,132,38,0.7);
+}
+.button-delete{
+	background: red;
+	border: 1px solid rgba(183,132,38,0.7);
+}
+form input[disabled]{
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+.form_error{
+	font-size: 13px;
+	padding: 3px;
+	background: red;
+	color: white;
+	margin-left: 5px;
+}
+.message{
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+.success{
+	background: green;
+	color: white;
+}
+.message a{
+	color: white;
+}
+.failed{
+	background: red;
+	color: white;
+}
+
+
+/*Página de proyectos*/
+.project{
+	list-style:none;
+	display: block;
+	float: left;
+	width: 28%;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;	
+	margin-bottom: 30px;
+}
+.project .image{
+	width: 100%;
+	height: 150px;
+	overflow: hidden; /*whatever is over 100px is trimmed*/
+}
+.project img{
+	width: 100%;
+}
+.project a{
+	text-decoration: none;
+	color: black;
+	
+}
+.confirm{
+	display: block;
+	font-weight: bold;
+	margin-top: 20px;
+}

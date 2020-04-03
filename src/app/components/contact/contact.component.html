@@ -1,0 +1,41 @@
+<div class="container pb-5" id="content">
+
+	<div class="row">
+		<div class="col">			
+			<h1>Contacto</h1><!-- componente padre contacto-->
+
+			<div id="texto" #textos >
+				<P  >Este es la página de contacto, puedes enviarnos cualquier duda</P>	
+			</div>
+		</div>
+	</div>	
+
+	<div class="row">
+		<div class="col">
+			Tamaño del slider:
+			<input type="number" [(ngModel)]="widthSlider" > 
+			<button (click)="cargarSlider()">Cargar Slider</button>
+			<button (click)="resetearSlider()">Resetear Slider</button>
+
+			<div *ngIf="anchuraToSlider">
+				 Tamaño del slider: <strong>{{widthSlider}}</strong> lo llevo a hijo
+				<slider [anchura]="anchuraToSlider"
+						[etiquetas]="captions"
+						(conseguirAutor)="getAutor($event)"	
+				></slider>
+			</div>
+			<div *ngIf="autor">
+				{{autor.nombre+""+autor.website}}
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+	
+	
+
+
+
+	

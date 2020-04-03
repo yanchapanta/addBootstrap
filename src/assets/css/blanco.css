@@ -1,0 +1,22 @@
+.temaFull {
+    background-color: #f9fcff!important;
+
+
+}
+
+body{
+	background: url("../img/blanco.png");
+	background-attachment:fixed; 
+} 
+
+div ul li a{
+    color: black!important;
+}
+nav a img{
+	background: rgba(87, 132, 36, 0.52);
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	
+}

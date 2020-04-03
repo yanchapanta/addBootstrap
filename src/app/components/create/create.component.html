@@ -1,0 +1,78 @@
+<div class="container pb-5" id="content" *ngIf="project">
+	<div class="row">
+		<div class="col-xl-6">
+			<h2>{{title}}</h2> 
+			<div class="col message success" *ngIf="status=='success'">
+				El proyecto se ha creado correctamente puedes <a [routerLink]="['/proyecto', save_project._id]">verlo aqui</a>
+			</div>
+			<div class="col message failed" *ngIf="status=='failed'">
+				El proyecto no se ha podido crear <a href="#">verlo aqui</a>
+			</div>
+			<form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)" >
+				<div class="form-group row">
+					<label for="name">Nombre del proyecto</label>
+					<p class="long">
+						<span class="badge badge-danger" *ngIf="name.touched && !name.valid">*El nombre es obligatorio.</span>
+					</p>
+					<input type="text" class="form-control mr-5" aria-describedby="nombre please" placeholder="nombre" name="name" #name="ngModel" [(ngModel)]="project.name" ngModel required>					
+				</div>
+
+				<div class="form-group row">
+					<label for="description">Descripción</label>
+					<p class="long">
+						<span class="badge badge-danger" *ngIf="description.touched && !description.valid">*La descripción es obligatorio</span>
+					</p>
+					<textarea type="text" class="form-control mr-5" rows="3"aria-describedby="description" placeholder="Descripción" name="description" #description="ngModel" [(ngModel)]="project.description" ngModel required></textarea>					
+				</div>			
+
+
+				<div class="form-group row">
+					<label for="category">Categoria</label>
+					<p class="long">
+						<span class="badge badge-danger"  *ngIf="category.touched && !category.valid">
+							La categoria es obligatorio
+						</span>
+					</p>
+					<input type="text" class="form-control mr-5" aria-describedby="category" placeholder="category" name="Categoria" #category="ngModel" [(ngModel)]="project.category"  ngModel required>					
+				</div>
+					
+				<div class="form-group row">
+					<label for="year">Año de lanzamiento</label>
+					<input type="number" class="form-control mr-5" aria-describedby="year" placeholder="Año"  name="year" #year="ngModel" [(ngModel)]="project.year"  ngModel>
+				</div>
+
+				<div class="form-group row">
+					<label for="langs">Lenguajes utilizados</label>
+					<p class="long">
+						<span class="badge badge-danger" *ngIf="langs.touched && !langs.valid">
+							El lenguaje es obligatorio
+						</span>
+					</p>
+					<input type="text" class="form-control mr-5" aria-describedby="langs" placeholder="Lenguajes utilizados" name="langs" #langs="ngModel" [(ngModel)]="project.langs" ngModel required>
+					
+				</div>
+
+				<div class="form-group row">
+					<p>
+						<label for="image">Imagen del proyecto</label><br>
+						<span class="image" *ngIf="project.image" style="float: none;">
+							<img src="{{url+'get-image/'+ project.image}}"  style="width: 200px;">
+						</span><br><br>
+						<input type="file" class="form-control-file " name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" ngModel ><!-- evento (change), if there is a change in an input, it launches another method that we have in our component -->
+					</p>
+
+				</div>
+
+				<div class="form-group row">
+					<button type="submit" class="btn btn-dark" [disabled]="!projectForm.form.valid">Enviar</button>
+				</div>
+			</form>
+		</div>
+	</div>	
+</div>
+
+<div class="container" >  
+	
+</div>
+
+<!-- C:/xampp/htdocs/www/curso-javascript/proyecto-angular -->

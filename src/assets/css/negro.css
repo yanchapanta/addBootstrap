@@ -1,0 +1,16 @@
+.temaFull {
+    background-color: #343a40!important;
+    
+}
+
+body{
+	background: url("../img/negro.png");
+	background-attachment:fixed; 
+} 
+
+a {
+	color: rgba(255,255,255,.5);
+    /*color: #007bff;*/
+    text-decoration: none;
+    background-color: transparent;
+}
