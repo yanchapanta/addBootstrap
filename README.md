@@ -1,27 +1,40 @@
-# AddBootstrap
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+## [PERSONAL PORTAFOLIO](https://www.behance.net/marcoyanchap)
+### Descripción
 
-## Development server
+Este proyecto en una web de portafolio personal, programas programas con el que se realizo el proyecto:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular 9.0.5
+- MongoDB
+- Bootstrap 4
+- Jquery
+- NodeJS
+- Css3 y Html5
 
-## Code scaffolding
+En proyecto guarda, modifica y eliminar en tiempo real en la base de datos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## A continuación fotos de la funcionalidad del proyecto
 
-## Build
+## LOGO
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![image](https://user-images.githubusercontent.com/34762008/78511202-6e574400-7760-11ea-8e0f-88f682c14019.png)
 
-## Running unit tests
+## WEB ADAPTABLE A SMARTPHONE
+![image](https://user-images.githubusercontent.com/34762008/78511254-cd1cbd80-7760-11ea-8d83-826e6159b3b3.png)
+ ## Portada web
+![image](https://user-images.githubusercontent.com/34762008/78511264-ef164000-7760-11ea-9db0-0fbf5a259311.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Muestra todos los proyectos guardados
+![image](https://user-images.githubusercontent.com/34762008/78511305-38ff2600-7761-11ea-8d86-ebaae34775a2.png)
 
-## Running end-to-end tests
+##Muestra detalladamente  el proyecto con  opción de editar y eliminar
+![image](https://user-images.githubusercontent.com/34762008/78511325-64821080-7761-11ea-9fb1-f638e33678dd.png)
+ ## El botón eliminar pregunta si quiere eliminar definitivamente
+![image](https://user-images.githubusercontent.com/34762008/78511345-95624580-7761-11ea-9ac4-987e83985c5b.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Tienes la opción de de Thema  que desee en su pagina web.
+![image](https://user-images.githubusercontent.com/34762008/78511378-c6427a80-7761-11ea-8c4a-4c4264622f2a.png)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
