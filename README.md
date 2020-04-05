@@ -15,7 +15,7 @@ En proyecto guarda, modifica y eliminar en tiempo real en la base de datos
 
 ## A continuación fotos de la funcionalidad del proyecto
 
-## LOGO
+## LOGO  Para ver mas contenido de imagen del proyecto haga [clic aquí](https://www.behance.net/gallery/94759425/Portafolio-de-proyectos)
 
 ![image](https://user-images.githubusercontent.com/34762008/78511202-6e574400-7760-11ea-8e0f-88f682c14019.png)
 
